@@ -38,47 +38,16 @@
       <joint name="wrist_2_joint" value="-1.6" />
       <joint name="wrist_3_joint" value="-0.11" />
     </group_state>
-    <!-- PLACEHOLDER pallet-search poses for the SearchPallet behavior tree.
-         These joint values are not tuned to any real pallet layout yet -
-         adjust them to the actual desired camera viewpoints. -->
+    <!-- Neutral ready/home pose used by the SearchPallet behavior tree
+         before and after the search sweep. The actual search viewpoints are
+         Cartesian goals (see bt_executor/behavior_trees/new_test.xml), not
+         SRDF group_states, since MoveIt's IK solves those at runtime. -->
     <group_state name="search_pose_home" group="ur_manipulator">
       <joint name="elbow_joint" value="0" />
       <joint name="shoulder_lift_joint" value="-1.5707" />
       <joint name="shoulder_pan_joint" value="0" />
       <joint name="wrist_1_joint" value="0" />
       <joint name="wrist_2_joint" value="0" />
-      <joint name="wrist_3_joint" value="0" />
-    </group_state>
-    <group_state name="pallet_search_pose_1" group="ur_manipulator">
-      <joint name="elbow_joint" value="0" />
-      <joint name="shoulder_lift_joint" value="-1.5707" />
-      <joint name="shoulder_pan_joint" value="-0.5" />
-      <joint name="wrist_1_joint" value="0" />
-      <joint name="wrist_2_joint" value="-0.5" />
-      <joint name="wrist_3_joint" value="0" />
-    </group_state>
-    <group_state name="pallet_search_pose_2" group="ur_manipulator">
-      <joint name="elbow_joint" value="0" />
-      <joint name="shoulder_lift_joint" value="-1.5707" />
-      <joint name="shoulder_pan_joint" value="0.5" />
-      <joint name="wrist_1_joint" value="0" />
-      <joint name="wrist_2_joint" value="-0.5" />
-      <joint name="wrist_3_joint" value="0" />
-    </group_state>
-    <group_state name="pallet_search_pose_3" group="ur_manipulator">
-      <joint name="elbow_joint" value="0" />
-      <joint name="shoulder_lift_joint" value="-1.5707" />
-      <joint name="shoulder_pan_joint" value="-0.5" />
-      <joint name="wrist_1_joint" value="0" />
-      <joint name="wrist_2_joint" value="0.5" />
-      <joint name="wrist_3_joint" value="0" />
-    </group_state>
-    <group_state name="pallet_search_pose_4" group="ur_manipulator">
-      <joint name="elbow_joint" value="0" />
-      <joint name="shoulder_lift_joint" value="-1.5707" />
-      <joint name="shoulder_pan_joint" value="0.5" />
-      <joint name="wrist_1_joint" value="0" />
-      <joint name="wrist_2_joint" value="0.5" />
       <joint name="wrist_3_joint" value="0" />
     </group_state>
     <!--END EFFECTOR - Purpose - Represent information about an end effector.-->
