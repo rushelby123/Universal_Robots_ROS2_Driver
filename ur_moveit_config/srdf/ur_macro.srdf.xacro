@@ -38,6 +38,49 @@
       <joint name="wrist_2_joint" value="-1.6" />
       <joint name="wrist_3_joint" value="-0.11" />
     </group_state>
+    <!-- PLACEHOLDER pallet-search poses for the SearchPallet behavior tree.
+         These joint values are not tuned to any real pallet layout yet -
+         adjust them to the actual desired camera viewpoints. -->
+    <group_state name="search_pose_home" group="ur_manipulator">
+      <joint name="elbow_joint" value="0" />
+      <joint name="shoulder_lift_joint" value="-1.5707" />
+      <joint name="shoulder_pan_joint" value="0" />
+      <joint name="wrist_1_joint" value="0" />
+      <joint name="wrist_2_joint" value="0" />
+      <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="pallet_search_pose_1" group="ur_manipulator">
+      <joint name="elbow_joint" value="0" />
+      <joint name="shoulder_lift_joint" value="-1.5707" />
+      <joint name="shoulder_pan_joint" value="-0.5" />
+      <joint name="wrist_1_joint" value="0" />
+      <joint name="wrist_2_joint" value="-0.5" />
+      <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="pallet_search_pose_2" group="ur_manipulator">
+      <joint name="elbow_joint" value="0" />
+      <joint name="shoulder_lift_joint" value="-1.5707" />
+      <joint name="shoulder_pan_joint" value="0.5" />
+      <joint name="wrist_1_joint" value="0" />
+      <joint name="wrist_2_joint" value="-0.5" />
+      <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="pallet_search_pose_3" group="ur_manipulator">
+      <joint name="elbow_joint" value="0" />
+      <joint name="shoulder_lift_joint" value="-1.5707" />
+      <joint name="shoulder_pan_joint" value="-0.5" />
+      <joint name="wrist_1_joint" value="0" />
+      <joint name="wrist_2_joint" value="0.5" />
+      <joint name="wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="pallet_search_pose_4" group="ur_manipulator">
+      <joint name="elbow_joint" value="0" />
+      <joint name="shoulder_lift_joint" value="-1.5707" />
+      <joint name="shoulder_pan_joint" value="0.5" />
+      <joint name="wrist_1_joint" value="0" />
+      <joint name="wrist_2_joint" value="0.5" />
+      <joint name="wrist_3_joint" value="0" />
+    </group_state>
     <!--END EFFECTOR - Purpose - Represent information about an end effector.-->
     <!--VIRTUAL JOINT - Purpose - this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <!--DISABLE COLLISIONS - By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
